@@ -1562,13 +1562,17 @@ class Component {
    *             return that if it exists.
    */
   static getComponent(name) {
-    if (!name) {
+    if (!name || !Component.components_) {
       return;
+    }
+
+    if (Component.components_[name]) {
+      return Component.components_[name];
     }
 
     name = toTitleCase(name);
 
-    if (Component.components_ && Component.components_[name]) {
+    if (Component.components_[name]) {
       return Component.components_[name];
     }
   }
