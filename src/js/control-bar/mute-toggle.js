@@ -5,7 +5,7 @@ import Button from '../button';
 import Component from '../component';
 import * as Dom from '../utils/dom.js';
 import checkMuteSupport from './volume-control/check-mute-support';
-import * as browser from '../utils/browser.js';
+import browser from '../utils/browser.js';
 
 /**
  * A button component for muting the audio.

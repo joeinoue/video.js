@@ -21,7 +21,7 @@ import { createTimeRanges } from './utils/time-ranges.js';
 import formatTime, { setFormatTime, resetFormatTime } from './utils/format-time.js';
 import log, { createLogger } from './utils/log.js';
 import * as Dom from './utils/dom.js';
-import * as browser from './utils/browser.js';
+import browser from './utils/browser.js';
 import * as Url from './utils/url.js';
 import {isObject} from './utils/obj';
 import computedStyle from './utils/computed-style.js';

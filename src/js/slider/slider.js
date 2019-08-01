@@ -4,7 +4,7 @@
 import Component from '../component.js';
 import * as Dom from '../utils/dom.js';
 import {assign} from '../utils/obj';
-import {IS_CHROME} from '../utils/browser.js';
+import browser from '../utils/browser.js';
 import keycode from 'keycode';
 
 /**
@@ -153,7 +153,7 @@ class Slider extends Component {
     // to avoid console warnings. Use a 'touch-action: none' style
     // instead to prevent unintented scrolling.
     // https://developers.google.com/web/updates/2017/01/scrolling-intervention
-    if (event.type === 'touchstart' && !IS_CHROME) {
+    if (event.type === 'touchstart' && !browser.IS_CHROME) {
       event.preventDefault();
     }
     Dom.blockTextSelection();

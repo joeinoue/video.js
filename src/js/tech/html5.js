@@ -6,7 +6,7 @@ import * as Dom from '../utils/dom.js';
 import * as Url from '../utils/url.js';
 import log from '../utils/log.js';
 import tsml from 'tsml';
-import * as browser from '../utils/browser.js';
+import browser from '../utils/browser.js';
 import document from 'global/document';
 import window from 'global/window';
 import {assign} from '../utils/obj';

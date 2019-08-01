@@ -14,8 +14,7 @@ import * as Events from './utils/events.js';
 import * as Dom from './utils/dom.js';
 import * as Fn from './utils/fn.js';
 import * as Guid from './utils/guid.js';
-import * as browser from './utils/browser.js';
-import {IE_VERSION, IS_CHROME, IS_WINDOWS} from './utils/browser.js';
+import browser from './utils/browser.js';
 import log, { createLogger } from './utils/log.js';
 import toTitleCase, { titleCaseEquals } from './utils/to-title-case.js';
 import { createTimeRange } from './utils/time-ranges.js';
@@ -669,7 +668,7 @@ class Player extends Component {
     // See https://github.com/FreedomScientific/VFO-standards-support/issues/78
     // Note that we can't detect if JAWS is being used, but this ARIA attribute
     //  doesn't change behavior of IE11 or Chrome if JAWS is not being used
-    if (IE_VERSION || (IS_CHROME && IS_WINDOWS)) {
+    if (browser.IE_VERSION || (browser.IS_CHROME && browser.IS_WINDOWS)) {
       tag.setAttribute('role', 'application');
       attrs.role = 'application';
     }

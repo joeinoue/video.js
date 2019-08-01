@@ -2,7 +2,7 @@
  * @file play-progress-bar.js
  */
 import Component from '../../component.js';
-import {IS_IOS, IS_ANDROID} from '../../utils/browser.js';
+import browser from '../../utils/browser.js';
 import * as Fn from '../../utils/fn.js';
 
 import './time-tooltip';
@@ -80,7 +80,7 @@ PlayProgressBar.prototype.options_ = {
 };
 
 // Time tooltips should not be added to a player on mobile devices
-if (!IS_IOS && !IS_ANDROID) {
+if (!browser.IS_IOS && !browser.IS_ANDROID) {
   PlayProgressBar.prototype.options_.children.push('timeTooltip');
 }
 

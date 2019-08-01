@@ -6,7 +6,7 @@ import Component from '../component.js';
 import Menu from './menu.js';
 import * as Dom from '../utils/dom.js';
 import toTitleCase from '../utils/to-title-case.js';
-import { IS_IOS } from '../utils/browser.js';
+import browser from '../utils/browser.js';
 import keycode from 'keycode';
 
 /**
@@ -328,7 +328,7 @@ class MenuButton extends Component {
 
       // set the focus into the submenu, except on iOS where it is resulting in
       // undesired scrolling behavior when the player is in an iframe
-      if (IS_IOS && Dom.isInFrame()) {
+      if (browser.IS_IOS && Dom.isInFrame()) {
         // Return early so that the menu isn't focused
         return;
       }

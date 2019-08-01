@@ -1,7 +1,7 @@
 import Component from './component.js';
 import mergeOptions from './utils/merge-options.js';
 import document from 'global/document';
-import * as browser from './utils/browser.js';
+import browser from './utils/browser.js';
 
 /* track when we are at the live edge, and other helpers for live playback */
 class LiveTracker extends Component {
