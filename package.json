@@ -96,7 +96,7 @@
     "@babel/preset-env": "^7.4.5",
     "access-sniff": "^3.2.0",
     "autoprefixer": "^9.6.0",
-    "bestzip": "^2.1.4",
+    "bestzip": "^2.1.5",
     "browserify": "^16.2.3",
     "chokidar-cli": "^1.2.2",
     "clean-css-cli": "^4.3.0",
