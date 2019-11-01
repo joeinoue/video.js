@@ -143,7 +143,7 @@
     "shx": "^0.3.2",
     "sinon": "^7.3.2",
     "tui-jsdoc-template": "^1.2.2",
-    "uglify-js": "^3.6.0",
+    "uglify-js": "^3.6.6",
     "unified": "^7.0.2",
     "videojs-flash": "^2.2.0",
     "videojs-generate-karma-config": "~5.2.1",
